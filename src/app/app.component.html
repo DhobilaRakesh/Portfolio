@@ -1,0 +1,169 @@
+<header class="hero">
+  <div class="page">
+    <div class="hero-card">
+      <div class="profile-area">
+        <img [src]="profile.photo" [alt]="profile.name + ' profile photo'" class="profile-photo">
+      </div>
+
+      <div class="name-area">
+        <h1>{{ profile.name }}</h1>
+        <p>I'm <span>{{ profile.role }}</span></p>
+
+        <div class="social-row">
+          <a *ngFor="let link of socialLinks" [href]="link.url" target="_blank" rel="noreferrer">
+            <b>{{ link.icon }}</b> {{ link.label }}
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="badges">
+          <img src="assets/badge-azure.svg" alt="Azure badge">
+          <img src="assets/badge-pmp.svg" alt="PMP badge">
+        </div>
+
+        <div class="tech-box">
+          <strong>// Thank you for visiting my profile</strong>
+          <div class="tech-icons">
+            <span *ngFor="let icon of techIcons">{{ icon }}</span>
+          </div>
+        </div>
+
+        <div class="download-row">
+          <a class="btn btn-green" [href]="profile.resume">⬇ Resume</a>
+          <a class="btn btn-lime" [href]="profile.coverLetter">▣ Cover Letter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page layout">
+  <section class="main-content">
+    <article class="card content-card">
+      <h2 class="section-title">Professional Summary</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card" *ngFor="let stat of stats">
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label }}</span>
+        </div>
+      </div>
+
+      <ul class="summary-list">
+        <li *ngFor="let point of summaryPoints">{{ point }}</li>
+      </ul>
+    </article>
+
+    <article class="card content-card">
+      <h2 class="section-title">Certifications:</h2>
+
+      <div class="certificate-card">
+        <h3>Azure Developer Associate (AZ-204)</h3>
+        <p>Issued by Microsoft</p>
+        <img src="assets/certificate-placeholder.svg" alt="Certificate preview">
+      </div>
+    </article>
+
+    <article class="card content-card" id="projects">
+      <h2 class="section-title">Major Projects:</h2>
+
+      <div class="project-list">
+        <article class="project-card" *ngFor="let project of projects">
+          <h3>{{ project.title }}</h3>
+          <p class="project-subtitle">{{ project.subtitle }}</p>
+          <img [src]="project.image" [alt]="project.title + ' screenshot'">
+          <div class="project-status">{{ project.status }}</div>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="chips">
+            <span *ngFor="let tech of project.tech">{{ tech }}</span>
+          </div>
+        </article>
+      </div>
+    </article>
+
+    <article class="card content-card" id="experience">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="timeline">
+        <article class="timeline-item" *ngFor="let exp of experiences">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div>
+              <h3>{{ exp.role }}</h3>
+              <strong>{{ exp.company }}</strong>
+              <p>Client: {{ exp.client }}</p>
+            </div>
+            <span>{{ exp.period }}</span>
+          </div>
+        </article>
+      </div>
+    </article>
+  </section>
+
+  <aside class="sidebar">
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Technical Skills</h3>
+
+      <div class="skill-group" *ngFor="let group of skills">
+        <h4>{{ group.title }}</h4>
+        <div class="chips">
+          <span *ngFor="let item of group.items">{{ item }}</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Certifications</h3>
+      <ul class="plain-list">
+        <li *ngFor="let cert of certifications">⚙ {{ cert }}</li>
+      </ul>
+    </article>
+
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Basic Information</h3>
+      <ul class="info-list">
+        <li>📍 {{ profile.location }}</li>
+        <li>✉ {{ profile.email }}</li>
+        <li>🔗 {{ profile.website }}</li>
+        <li>📞 {{ profile.phone }}</li>
+      </ul>
+    </article>
+
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Professional Achievements:</h3>
+      <p *ngFor="let item of achievements">{{ item }}</p>
+    </article>
+
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Education</h3>
+      <div class="education-item" *ngFor="let edu of education">
+        <strong>{{ edu.degree }}</strong>
+        <span>{{ edu.university }}</span>
+      </div>
+    </article>
+
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Languages</h3>
+      <div class="language-row" *ngFor="let lang of languages">
+        <strong>{{ lang.name }}</strong>
+        <span>{{ lang.level }}</span>
+      </div>
+    </article>
+
+    <article class="card sidebar-card">
+      <h3 class="sidebar-title">Hobbies & Interests</h3>
+      <div class="chips">
+        <span *ngFor="let hobby of hobbies">{{ hobby }}</span>
+      </div>
+    </article>
+  </aside>
+</main>
+
+<a class="whatsapp" [href]="profile.whatsapp" target="_blank" rel="noreferrer" aria-label="Contact on WhatsApp">☘</a>
+
+<footer class="footer">
+  <div class="page">
+    © {{ currentYear }} {{ profile.name }}. Built with Angular.
+  </div>
+</footer>
