@@ -68,7 +68,7 @@ export class AppComponent {
   socialLinks: SocialLink[] = [
     { label: 'LinkedIn', icon: 'in', url: 'https://www.linkedin.com/in/rakesh-dhobila-a34523222/' },
     { label: 'GitHub', icon: 'GH', url: 'https://github.com/DhobilaRakesh' },
-    { label: 'Email', icon: '✉', url: 'mailto:rakeshdhobila006@gmail.com' }
+    { label: 'Email', icon: '✉', url: 'rakeshdhobila006@gmail.com' }
   ];
 
   techIcons = ['Angular', 'Type Script', 'Node Js', 'MongoDB', 'Jquery', 'HTML', 'CSS', 'React', 'JS', 'REST APIs'];
