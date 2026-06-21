@@ -17,10 +17,6 @@
       </div>
 
       <div class="hero-right">
-        <div class="badges">
-          <img src="assets/badge-azure.svg" alt="Azure badge">
-          <img src="assets/badge-pmp.svg" alt="PMP badge">
-        </div>
 
         <div class="tech-box">
           <strong>// Thank you for visiting my profile</strong>
@@ -30,8 +26,8 @@
         </div>
 
         <div class="download-row">
-          <a class="btn btn-green" [href]="profile.resume">⬇ Resume</a>
-          <a class="btn btn-lime" [href]="profile.coverLetter">▣ Cover Letter</a>
+          <a class="btn btn-green" [href]="profile.resume">Resume</a>
+          <a class="btn btn-lime" [href]="profile.coverLetter">Cover Letter</a>
         </div>
       </div>
     </div>
@@ -43,19 +39,19 @@
     <article class="card content-card">
       <h2 class="section-title">Professional Summary</h2>
 
-      <div class="stats-grid">
+      <!-- <div class="stats-grid">
         <div class="stat-card" *ngFor="let stat of stats">
           <strong>{{ stat.value }}</strong>
           <span>{{ stat.label }}</span>
         </div>
-      </div>
+      </div> -->
 
       <ul class="summary-list">
         <li *ngFor="let point of summaryPoints">{{ point }}</li>
       </ul>
     </article>
 
-    <article class="card content-card">
+    <!-- <article class="card content-card">
       <h2 class="section-title">Certifications:</h2>
 
       <div class="certificate-card">
@@ -63,7 +59,7 @@
         <p>Issued by Microsoft</p>
         <img src="assets/certificate-placeholder.svg" alt="Certificate preview">
       </div>
-    </article>
+    </article> -->
 
     <article class="card content-card" id="projects">
       <h2 class="section-title">Major Projects:</h2>
@@ -113,19 +109,19 @@
       </div>
     </article>
 
-    <article class="card sidebar-card">
+    <!-- <article class="card sidebar-card">
       <h3 class="sidebar-title">Certifications</h3>
       <ul class="plain-list">
         <li *ngFor="let cert of certifications">⚙ {{ cert }}</li>
       </ul>
-    </article>
+    </article> -->
 
     <article class="card sidebar-card">
       <h3 class="sidebar-title">Basic Information</h3>
       <ul class="info-list">
         <li>📍 {{ profile.location }}</li>
         <li>✉ {{ profile.email }}</li>
-        <li>🔗 {{ profile.website }}</li>
+        <li>🔗&nbsp;<a href='https://lnkd.in/dursZpFf'> <b>{{ profile.website }} </b> </a> </li>
         <li>📞 {{ profile.phone }}</li>
       </ul>
     </article>

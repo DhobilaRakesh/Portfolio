@@ -52,41 +52,45 @@ interface Language {
 })
 export class AppComponent {
   profile = {
-    name: 'Your Name',
-    role: 'Senior Angular Developer',
-    subtitle: 'Angular • TypeScript • .NET APIs',
+    name: 'Rakesh Dhobila',
+    role: 'Angular Developer',
+    subtitle: 'Angular • TypeScript',
     location: 'Hyderabad - India',
-    email: 'your.email@example.com',
-    website: 'yourportfolio.com',
-    phone: '+91 00000 00000',
-    whatsapp: 'https://wa.me/910000000000',
-    photo: 'assets/profile-placeholder.svg',
-    resume: '#',
-    coverLetter: '#'
+    email: 'rakeshdhobila006@gmail.com',
+    website: 'https://lnkd.in/dursZpFf',
+    phone: '+91 8639822946',
+    whatsapp: 'https://wa.me/918639822946',
+    photo: 'assets/rakesh1.jpeg',
+    resume: 'assets/Resume.pdf',
+    coverLetter: 'assets/cover_letter.pdf'
   };
 
   socialLinks: SocialLink[] = [
-    { label: 'LinkedIn', icon: 'in', url: 'https://linkedin.com/in/your-profile' },
-    { label: 'GitHub', icon: 'GH', url: 'https://github.com/your-username' },
-    { label: 'Email', icon: '✉', url: 'mailto:your.email@example.com' }
+    { label: 'LinkedIn', icon: 'in', url: 'https://www.linkedin.com/in/rakesh-dhobila-a34523222/' },
+    { label: 'GitHub', icon: 'GH', url: 'https://github.com/DhobilaRakesh' },
+    { label: 'Email', icon: '✉', url: 'rakeshdhobila006@gmail.com' }
   ];
 
-  techIcons = ['.NET', 'C#', 'A', 'React', 'JS', 'TS', 'SQL', 'Azure'];
+  techIcons = ['Angular', 'Type Script', 'Node Js', 'MongoDB', 'Jquery', 'HTML', 'CSS', 'React', 'JS', 'REST APIs'];
 
   stats: StatCard[] = [
-    { value: '10+ Years', label: 'Software Experience' },
-    { value: '5+ Years', label: 'Angular Experience' },
-    { value: '20+', label: 'Major Modules' },
-    { value: 'Lead', label: 'Enterprise Delivery' }
+    // { value: '3+ Years', label: 'Software Experience' },
+    // { value: '3+ Years', label: 'Angular Experience' }
   ];
 
   summaryPoints = [
-    'Senior Angular Developer with strong experience in enterprise application development, REST APIs, reusable UI components, dashboards, and business workflows.',
-    'Expertise in Angular, TypeScript, RxJS, HTML5, SCSS, Bootstrap, PrimeNG-style components, and clean frontend architecture.',
-    'Experienced in authentication and security using JWT, OAuth, MSAL, Active Directory, role-based access, and claims-based authorization.',
-    'Strong background in .NET Core Web APIs, SQL Server, Microservices, Clean Architecture, Agile delivery, CI/CD, logging, testing, and production support.',
+    '3+ years of hands-on experience in full-stack web application development using the MEAN stack: MongoDB, Express.js, Angular, and Node.js.',
+    'Expertise in Angular, TypeScript, RxJS, HTML5, CSS, Bootstrap, PrimeNG-style components, and clean frontend architecture.',
+    'Strong knowledge of building and consuming RESTful APIs using Node.js and Express.js.',
+    'Hands-on experience in designing and managing MongoDB databases, collections, schemas, queries, and CRUD operations.',
     'Good experience in performance improvement, API error handling, responsive UI, browser compatibility, and maintainable coding standards.',
-    'Recognized for delivering business-critical applications for government, enterprise, and internal digital transformation projects.'
+    'Recognized for delivering business-critical applications for government, enterprise, and internal digital transformation projects.',
+    'Experienced in integrating frontend Angular applications with backend APIs and handling HTTP requests using Angular services.',
+    'Good understanding of Angular concepts such as components, modules, routing, services, forms, directives, pipes, and RxJS observables.',
+    'Worked on debugging, troubleshooting, and fixing application issues across frontend, backend, and database layers.',
+    'Familiar with version control tools like Git, GitHub, and GitLab for source code management.',
+    'Good knowledge of API testing tools such as Postman for validating backend services.',
+    'Ability to write clean, reusable, and maintainable code following coding standards and best practices.'
   ];
 
   skills: SkillGroup[] = [
@@ -96,32 +100,30 @@ export class AppComponent {
     },
     {
       title: 'Backend',
-      items: ['C#', 'ASP.NET Core', 'ASP.NET MVC', 'Web API', 'REST API', 'Microservices', 'Entity Framework', 'Dapper']
+      items: ['Node Js', 'REST API']
     },
     {
       title: 'Database & Cloud',
-      items: ['SQL Server', 'Stored Procedures', 'Query Optimization', 'Azure', 'Azure App Services', 'IIS', 'CI/CD']
+      items: ['MonogoDB', 'Query Optimization']
     },
     {
       title: 'Security & Tools',
-      items: ['JWT', 'OAuth', 'MSAL', 'Active Directory', 'Git', 'Postman', 'PowerShell', 'Swagger']
+      items: ['JWT', 'OAuth', 'MSAL', 'Git', 'Postman', 'PowerShell', 'Swagger']
     }
   ];
 
   certifications = [
-    'Microsoft Certified: Azure Developer Associate (AZ-204)',
-    'Project Management Professional (PMP)®'
+    ''
   ];
 
   achievements = [
     'Delivered multiple enterprise applications with improved user experience and faster business processing.',
-    'Received appreciation certificates from clients and project stakeholders.',
-    'Mentored junior developers on Angular structure, code quality, and API integration.'
+    'Received appreciation certificates from clients and project stakeholders.'
   ];
 
   education: Education[] = [
-    { degree: 'Master of Computer Applications (MCA)', university: 'Your University' },
-    { degree: 'BSc Computer Science', university: 'Your University' }
+    { degree: 'M.Sc Computer Science', university: 'Satavahana University' },
+    { degree: 'BSc Computer Science', university: 'Satavahana University' }
   ];
 
   languages: Language[] = [
@@ -134,63 +136,85 @@ export class AppComponent {
 
   projects: Project[] = [
     {
-      title: 'Enterprise Services Portal',
-      subtitle: 'Government service platform',
-      image: 'assets/project-government-services.svg',
+      title: 'Digital Healthcare Services Portal',
+      subtitle: 'ABDM integrated healthcare platform',
+      image: 'assets/ABHA.png',
       status: 'Current',
-      description: 'Angular portal for service discovery, dashboard, application forms, authentication, API integration, and user journey tracking.',
-      tech: ['Angular', 'TypeScript', 'REST API', '.NET Core', 'SQL Server']
+      description: 'Developed a healthcare portal for ABHA, HFR, HPR, and EMR OP/IP modules. The application supports patient registration, digital health profile management, healthcare professional and facility records, outpatient visits, inpatient admission, clinical records, prescriptions, and discharge summary workflows.',
+      tech: ['Angular', 'TypeScript', 'JavaScript', 'REST API', 'NodeJS', 'MongoDB']
     },
     {
       title: 'Workflow Approval System',
       subtitle: 'Business approval dashboard',
-      image: 'assets/project-workflow.svg',
+      image: 'assets/abha2.png',
       status: 'Completed',
       description: 'Approval screens with status filters, reviewer actions, audit trail, notifications, and role-based access.',
       tech: ['Angular', 'Reactive Forms', 'JWT', 'Web API']
-    },
-    {
-      title: 'AI Knowledge Search UI',
-      subtitle: 'Internal knowledge assistant',
-      image: 'assets/project-ai-search.svg',
-      status: 'Prototype',
-      description: 'Search interface to display secured AI results, document references, preview cards, and user feedback.',
-      tech: ['Angular', 'Signals', 'REST API', 'UX']
     }
+    // {
+    //   title: 'AI Knowledge Search UI',
+    //   subtitle: 'Internal knowledge assistant',
+    //   image: 'assets/project-ai-search.svg',
+    //   status: 'Prototype',
+    //   description: 'Search interface to display secured AI results, document references, preview cards, and user feedback.',
+    //   tech: ['Angular', 'Signals', 'REST API', 'UX']
+    // }
   ];
 
+
+
   experiences: Experience[] = [
-    {
-      role: 'Senior Angular Developer',
-      company: 'Current Company',
-      client: 'Enterprise Client',
-      period: 'May 2026 - Present'
-    },
-    {
-      role: 'Senior Full Stack Developer',
-      company: 'Previous Company',
-      client: 'Government / Enterprise Client',
-      period: 'Oct 2024 - Apr 2026'
-    },
-    {
-      role: '.NET Technical Lead',
-      company: 'Previous Company',
-      client: 'Internal Product / Client Project',
-      period: 'Jul 2024 - Oct 2024'
-    },
-    {
-      role: 'Senior .NET Developer',
-      company: 'Previous Company',
-      client: 'Digital Transformation Project',
-      period: 'Oct 2023 - Feb 2024'
-    },
-    {
-      role: '.NET Developer',
-      company: 'Previous Company',
-      client: 'Business Application Team',
-      period: 'Jul 2019 - Jun 2021'
-    }
-  ];
+  {
+    role: 'MEAN Stack Developer',
+    company: 'Suvarna Technosoft Pvt Ltd.',
+    client: 'Healthcare / Government Client',
+    period: 'May 2023 - Present'
+  },
+  {
+    role: 'Angular Developer',
+    company: 'Suvarna Technosoft Pvt Ltd.',
+    client: 'Digital Healthcare Services Portal',
+    period: 'May 2023 - Present'
+  },
+  {
+    role: 'Frontend Developer',
+    company: 'Suvarna Technosoft Pvt Ltd.',
+    client: 'Workflow Approval System',
+    period: '2024 - 2025'
+  }
+];
+  // experiences: Experience[] = [
+  //   {
+  //     role: 'Angular Developer',
+  //     company: 'Suvarna Technosoft Pvt Ltd.',
+  //     client: 'Enterprise Client',
+  //     period: 'May 2023 - Present'
+  //   },
+  //   {
+  //     role: 'Angular Developer',
+  //     company: 'Previous Company',
+  //     client: 'Government / Enterprise Client',
+  //     period: 'Oct 2024 - Apr 2026'
+  //   },
+  //   {
+  //     role: '.NET Technical Lead',
+  //     company: 'Previous Company',
+  //     client: 'Internal Product / Client Project',
+  //     period: 'Jul 2024 - Oct 2024'
+  //   },
+  //   {
+  //     role: 'Senior .NET Developer',
+  //     company: 'Previous Company',
+  //     client: 'Digital Transformation Project',
+  //     period: 'Oct 2023 - Feb 2024'
+  //   },
+  //   {
+  //     role: '.NET Developer',
+  //     company: 'Previous Company',
+  //     client: 'Business Application Team',
+  //     period: 'Jul 2019 - Jun 2021'
+  //   }
+  // ];
 
   currentYear = new Date().getFullYear();
 }
