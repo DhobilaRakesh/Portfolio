@@ -53,7 +53,7 @@ interface Language {
 export class AppComponent {
   profile = {
     name: 'Rakesh Dhobila',
-    role: 'Angular Developer',
+    role: 'MEAN Stack | Angular Developer',
     subtitle: 'Angular • TypeScript',
     location: 'Hyderabad - India',
     email: 'rakeshdhobila006@gmail.com',
@@ -145,7 +145,7 @@ export class AppComponent {
     },
     {
       title: 'Workflow Approval System',
-      subtitle: 'Business approval dashboard',
+      subtitle: 'ABDM approval',
       image: 'assets/abha2.png',
       status: 'Completed',
       description: 'Approval screens with status filters, reviewer actions, audit trail, notifications, and role-based access.',
@@ -167,13 +167,13 @@ export class AppComponent {
   {
     role: 'MEAN Stack Developer',
     company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'Healthcare / Government Client',
+    client: 'IT Healthcare / Government Client',
     period: 'May 2023 - Present'
   },
   {
     role: 'Angular Developer',
     company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'Digital Healthcare Services Portal',
+    client: 'IT Digital Healthcare Services Portal',
     period: 'May 2023 - Present'
   },
   {
