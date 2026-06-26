@@ -53,7 +53,7 @@ interface Language {
 export class AppComponent {
   profile = {
     name: 'Rakesh Dhobila',
-    role: 'MEAN Stack | Angular Developer',
+    role: 'MEAN Stack | Angular | Node Developer',
     subtitle: 'Angular • TypeScript',
     location: 'Hyderabad - India',
     email: 'rakeshdhobila006@gmail.com',
