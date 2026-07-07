@@ -96,7 +96,7 @@ export class AppComponent {
   skills: SkillGroup[] = [
     {
       title: 'Frontend',
-      items: ['Angular v20', 'TypeScript', 'RxJS', 'Signals', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'Bootstrap', 'PrimeNG']
+      items: ['Angular (v8-v20)', 'TypeScript', 'RxJS', 'Signals', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'Bootstrap', 'PrimeNG']
     },
     {
       title: 'Backend',
@@ -167,20 +167,14 @@ export class AppComponent {
   {
     role: 'MEAN Stack Developer',
     company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'IT Healthcare / Government Client',
-    period: 'May 2023 - Present'
+    client: 'ABDM Digital Healthcare Services Portal',
+    period: 'May 2025 - Present'
   },
   {
     role: 'Angular Developer',
     company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'IT Digital Healthcare Services Portal',
+    client: 'ABDM Digital Healthcare Services Portal',
     period: 'May 2023 - Present'
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'Workflow Approval System',
-    period: '2024 - 2025'
   }
 ];
   // experiences: Experience[] = [
