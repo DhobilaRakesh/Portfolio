@@ -136,9 +136,9 @@ export class AppComponent {
 
   projects: Project[] = [
     {
-      title: 'Digital Healthcare Services Portal',
+      title: 'Digital Healthcare Services',
       subtitle: 'ABDM integrated healthcare platform',
-      image: 'assets/ABHA.png',
+      image: 'assets/abha1.png',
       status: 'Current',
       description: 'Developed a healthcare portal for ABHA, HFR, HPR, and EMR OP/IP modules. The application supports patient registration, digital health profile management, healthcare professional and facility records, outpatient visits, inpatient admission, clinical records, prescriptions, and discharge summary workflows.',
       tech: ['Angular', 'TypeScript', 'JavaScript', 'REST API', 'NodeJS', 'MongoDB']
@@ -146,7 +146,7 @@ export class AppComponent {
     {
       title: 'Workflow Approval System',
       subtitle: 'ABDM approval',
-      image: 'assets/abha2.png',
+      image: 'assets/Suv_Technosoft.png',
       status: 'Completed',
       description: 'Approval screens with status filters, reviewer actions, audit trail, notifications, and role-based access.',
       tech: ['Angular', 'Reactive Forms', 'JWT', 'Web API']
