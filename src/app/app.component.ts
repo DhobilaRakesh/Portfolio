@@ -148,8 +148,8 @@ export class AppComponent {
       subtitle: 'ABDM approval',
       image: 'assets/Suv_Technosoft.png',
       status: 'Completed',
-      description: 'Approval screens with status filters, reviewer actions, audit trail, notifications, and role-based access.',
-      tech: ['Angular', 'Reactive Forms', 'JWT', 'Web API']
+      description: 'Received the official Integration Completion Certificate from the National Health Authority (NHA) for successfully implementing the Ayushman Bharat Digital Mission (ABDM) M1, M2 & M3 milestones while contributing to enterprise healthcare solutions.',
+      tech: ['Angular', 'TypeScript', 'JavaScript', 'REST API', 'NodeJS', 'MongoDB']
     }
     // {
     //   title: 'AI Knowledge Search UI',
