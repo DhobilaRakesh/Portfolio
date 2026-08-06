@@ -96,7 +96,7 @@ export class AppComponent {
   skills: SkillGroup[] = [
     {
       title: 'Frontend',
-      items: ['Angular (v8-v20)', 'TypeScript', 'RxJS', 'Signals', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'Bootstrap', 'PrimeNG']
+      items: ['Angular (v10-v20)', 'TypeScript', 'RxJS', 'Signals', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'Bootstrap', 'PrimeNG']
     },
     {
       title: 'Backend',
