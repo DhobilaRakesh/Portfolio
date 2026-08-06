@@ -79,19 +79,34 @@ export class AppComponent {
   ];
 
   summaryPoints = [
-    '3+ years of hands-on experience in full-stack web application development using the MEAN stack: MongoDB, Express.js, Angular, and Node.js.',
-    'Expertise in Angular, TypeScript, RxJS, HTML5, CSS, Bootstrap, PrimeNG-style components, and clean frontend architecture.',
-    'Strong knowledge of building and consuming RESTful APIs using Node.js and Express.js.',
-    'Hands-on experience in designing and managing MongoDB databases, collections, schemas, queries, and CRUD operations.',
-    'Good experience in performance improvement, API error handling, responsive UI, browser compatibility, and maintainable coding standards.',
-    'Recognized for delivering business-critical applications for government, enterprise, and internal digital transformation projects.',
-    'Experienced in integrating frontend Angular applications with backend APIs and handling HTTP requests using Angular services.',
-    'Good understanding of Angular concepts such as components, modules, routing, services, forms, directives, pipes, and RxJS observables.',
-    'Worked on debugging, troubleshooting, and fixing application issues across frontend, backend, and database layers.',
-    'Familiar with version control tools like Git, GitHub, and GitLab for source code management.',
-    'Good knowledge of API testing tools such as Postman for validating backend services.',
-    'Ability to write clean, reusable, and maintainable code following coding standards and best practices.'
-  ];
+    '3+ years of professional experience in frontend web application development using Angular, TypeScript, HTML5, CSS3, SCSS, Bootstrap, and RxJS.',
+    '1 year of hands-on experience in backend development using Node.js, Express.js, and MongoDB for building RESTful APIs and server-side applications.',
+    'Strong expertise in Angular, TypeScript, RxJS, HTML5, CSS3, Bootstrap, PrimeNG, and building scalable, maintainable frontend applications.',
+    'Experience in designing, developing, and consuming RESTful APIs using Node.js and Express.js.',
+    'Hands-on experience with MongoDB, including schema design, CRUD operations, queries, and aggregation pipelines.',
+    'Good experience integrating Angular applications with backend APIs using HttpClient, services, and RxJS.',
+    'Strong understanding of Angular concepts such as components, modules, routing, lazy loading, reactive forms, directives, pipes, dependency injection, and state management.',
+    'Experience in improving application performance through code optimization, lazy loading, efficient change detection, and responsive UI development.',
+    'Worked on debugging, troubleshooting, and resolving issues across frontend, backend, and database layers.',
+    'Hands-on experience with Git, GitHub, and GitLab for version control and collaborative development.',
+    'Experience using Postman for API development, testing, and validation.',
+    'Recognized for delivering enterprise and government digital transformation projects with clean, reusable, and maintainable code following industry best practices.'
+  ]
+
+  // [
+  //   '3+ years of hands-on experience in full-stack web application development using the MEAN stack: MongoDB, Express.js, Angular, and Node.js.',
+  //   'Expertise in Angular, TypeScript, RxJS, HTML5, CSS, Bootstrap, PrimeNG-style components, and clean frontend architecture.',
+  //   'Strong knowledge of building and consuming RESTful APIs using Node.js and Express.js.',
+  //   'Hands-on experience in designing and managing MongoDB databases, collections, schemas, queries, and CRUD operations.',
+  //   'Good experience in performance improvement, API error handling, responsive UI, browser compatibility, and maintainable coding standards.',
+  //   'Recognized for delivering business-critical applications for government, enterprise, and internal digital transformation projects.',
+  //   'Experienced in integrating frontend Angular applications with backend APIs and handling HTTP requests using Angular services.',
+  //   'Good understanding of Angular concepts such as components, modules, routing, services, forms, directives, pipes, and RxJS observables.',
+  //   'Worked on debugging, troubleshooting, and fixing application issues across frontend, backend, and database layers.',
+  //   'Familiar with version control tools like Git, GitHub, and GitLab for source code management.',
+  //   'Good knowledge of API testing tools such as Postman for validating backend services.',
+  //   'Ability to write clean, reusable, and maintainable code following coding standards and best practices.'
+  // ];
 
   skills: SkillGroup[] = [
     {
@@ -164,19 +179,19 @@ export class AppComponent {
 
 
   experiences: Experience[] = [
-  {
-    role: 'MEAN Stack Developer',
-    company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'ABDM Digital Healthcare Services Portal',
-    period: 'May 2025 - Present'
-  },
-  {
-    role: 'Angular Developer',
-    company: 'Suvarna Technosoft Pvt Ltd.',
-    client: 'ABDM Digital Healthcare Services Portal',
-    period: 'May 2023 - Present'
-  }
-];
+    {
+      role: 'MEAN Stack Developer',
+      company: 'Suvarna Technosoft Pvt Ltd.',
+      client: 'ABDM Digital Healthcare Services Portal',
+      period: 'May 2025 - Present'
+    },
+    {
+      role: 'Angular Developer',
+      company: 'Suvarna Technosoft Pvt Ltd.',
+      client: 'ABDM Digital Healthcare Services Portal',
+      period: 'May 2023 - Present'
+    }
+  ];
   // experiences: Experience[] = [
   //   {
   //     role: 'Angular Developer',
